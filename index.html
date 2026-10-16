@@ -24,7 +24,7 @@
                 <input type="date" id="reportDate" class="w-full p-2 border rounded-lg bg-white text-sm focus:ring-2 focus:ring-emerald-500">
             </div>
             
-            <!-- Grid untuk Pilihan Kavling dan Lantai Berdampingan -->
+            <!-- Grid untuk Pilihan Kavling dan Lantai -->
             <div class="grid grid-cols-2 gap-2">
                 <div>
                     <label class="block text-xs font-semibold text-gray-600 mb-1">PILIH KAVLING</label>
@@ -49,87 +49,141 @@
             </div>
         </div>
 
-        <!-- Daftar Checklist Pekerjaan -->
+        <!-- Daftar Checklist Pekerjaan (24 Item Sesuai Google Sheets) -->
         <div class="p-4 flex-1 overflow-y-auto space-y-6">
             
-            <!-- Tahap 1 -->
+            <!-- 1. PERSIAPAN & STRUKTUR BAWAH -->
             <div>
-                <h3 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">1. Persiapan & Struktur Bawah</h3>
+                <h3 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">1. PERSIAPAN & STRUKTUR BAWAH</h3>
                 <div class="space-y-2 bg-gray-50 p-3 rounded-lg border">
                     <label class="flex items-center space-x-3 text-sm">
                         <input type="checkbox" data-task="Pembersihan & Pasang Bowplank" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Pembersihan & Pasang Bowplank</span>
+                        <span>1. Pembersihan & Pasang Bowplank</span>
                     </label>
                     <label class="flex items-center space-x-3 text-sm">
                         <input type="checkbox" data-task="Galian Tanah & Urugan Pasir" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Galian Tanah & Urugan Pasir</span>
+                        <span>2. Galian Tanah & Urugan Pasir</span>
                     </label>
                     <label class="flex items-center space-x-3 text-sm">
                         <input type="checkbox" data-task="Pasang Batu Kali / Aanstamping" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Pasang Batu Kali / Aanstamping</span>
+                        <span>3. Pasang Batu Kali / Aanstamping</span>
                     </label>
                     <label class="flex items-center space-x-3 text-sm">
-                        <input type="checkbox" data-task="Pengecoran Sloof Beton" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Pengecoran Sloof Beton</span>
+                        <input type="checkbox" data-task="Pengecoran Sloof" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>4. Pengecoran Sloof</span>
                     </label>
                 </div>
             </div>
 
-            <!-- Tahap 2 -->
+            <!-- 2. STRUKTUR ATAS & DINDING -->
             <div>
-                <h3 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">2. Struktur Atas & Dinding</h3>
+                <h3 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">2. STRUKTUR ATAS & DINDING</h3>
                 <div class="space-y-2 bg-gray-50 p-3 rounded-lg border">
                     <label class="flex items-center space-x-3 text-sm">
-                        <input type="checkbox" data-task="Pemasangan Kolom Praktis" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Pemasangan Kolom Praktis</span>
+                        <input type="checkbox" data-task="Pengecoran Kolom Praktis" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>5. Pengecoran Kolom Praktis</span>
                     </label>
                     <label class="flex items-center space-x-3 text-sm">
-                        <input type="checkbox" data-task="Pasang Dinding Bata Ringan (Hebel)" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Pasang Dinding Bata Ringan (Hebel) + Thinbed</span>
+                        <input type="checkbox" data-task="Pasang Dinding Bata Ringan (Hebel) & Thinbed" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>6. Pasang Dinding Bata Ringan (Hebel) & Thinbed</span>
                     </label>
                     <label class="flex items-center space-x-3 text-sm">
                         <input type="checkbox" data-task="Pengecoran Ring Balk" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Pengecoran Ring Balk</span>
+                        <span>7. Pengecoran Ring Balk</span>
                     </label>
                     <label class="flex items-center space-x-3 text-sm">
                         <input type="checkbox" data-task="Plesteran & Acian Dinding" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Plesteran & Acian Dinding</span>
+                        <span>8. Plesteran & Acian Dinding</span>
                     </label>
                 </div>
             </div>
 
-            <!-- Tahap 3, 4 & 5 -->
+            <!-- 3. ATAP & EKSTERIOR -->
             <div>
-                <h3 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">3, 4 & 5. Atap, MEP, Finishing & Site Works</h3>
+                <h3 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">3. ATAP & EKSTERIOR</h3>
                 <div class="space-y-2 bg-gray-50 p-3 rounded-lg border">
                     <label class="flex items-center space-x-3 text-sm">
-                        <input type="checkbox" data-task="Pasang Rangka Atap Baja Ringan" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Pasang Rangka Atap Baja Ringan</span>
+                        <input type="checkbox" data-task="Pasang Rangka Baja Ringan" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>9. Pasang Rangka Baja Ringan</span>
                     </label>
                     <label class="flex items-center space-x-3 text-sm">
-                        <input type="checkbox" data-task="Pasang Atap Bitumen & Plywood" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Pasang Atap Bitumen & Plywood/OSB</span>
+                        <input type="checkbox" data-task="Pasang Alas Plywood/OSB Board" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>10. Pasang Alas Plywood/OSB Board</span>
                     </label>
                     <label class="flex items-center space-x-3 text-sm">
-                        <input type="checkbox" data-task="Instalasi Plumbing & Water Heater/Exhaust" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Instalasi Plumbing, Water Heater & Exhaust Fan</span>
+                        <input type="checkbox" data-task="Pasang Atap Bitumen & Flashing" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>11. Pasang Atap Bitumen & Flashing</span>
                     </label>
                     <label class="flex items-center space-x-3 text-sm">
-                        <input type="checkbox" data-task="Penataan & Pemadatan Tanah Carport" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Penataan & Pemadatan Tanah Carport Depan</span>
+                        <input type="checkbox" data-task="Pasang Conwood Fasad / Lisplang" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>12. Pasang Conwood Fasad / Lisplang</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 4. MEP (UTILITAS) -->
+            <div>
+                <h3 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">4. MEP (UTILITAS)</h3>
+                <div class="space-y-2 bg-gray-50 p-3 rounded-lg border">
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Instalasi Pipa Air Bersih & Kotor (Multi Kamar Mandi)" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>13. Instalasi Pipa Air Bersih & Kotor</span>
                     </label>
                     <label class="flex items-center space-x-3 text-sm">
-                        <input type="checkbox" data-task="Pasang Pagar Pembatas Samping Hebel" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Pasang Pagar Pembatas Samping (Hebel)</span>
+                        <input type="checkbox" data-task="Instalasi Pipa & Cable NYM 2.5mm Water Heater" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>14. Instalasi Pipa & Cable NYM Water Heater</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Bobokan & Pemasangan Exhaust Fan Tiap Kamar Mandi" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>15. Bobokan & Pemasangan Exhaust Fan</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pasang Box MCB & Sakelar" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>16. Pasang Box MCB & Sakelar</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 5. FINISHING & ARSITEKTUR -->
+            <div>
+                <h3 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">5. FINISHING & ARSITEKTUR</h3>
+                <div class="space-y-2 bg-gray-50 p-3 rounded-lg border">
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pasang Plafon & Lis Plafon" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>17. Pasang Plafon & Lis Plafon</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pasang Kusen, Pintu, & Jendela" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>18. Pasang Kusen, Pintu, & Jendela</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pasang Keramik/Granit Lantai & Kamar Mandi" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>19. Pasang Keramik/Granit Lantai & KM</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pasang Sanitary (Kloset, Shower, Sink)" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>20. Pasang Sanitary (Kloset, Shower, Sink)</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pengecatan (Interior, Eksterior, Plafon)" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>21. Pengecatan (Interior, Eksterior, Plafon)</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Penataan & Pemadatan Tanah Area Carport Depan" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>22. Penataan & Pemadatan Tanah Carport</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pemasangan Dinding Pagar Pembatas Samping (Batu)" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>23. Pemasangan Pagar Pembatas Samping</span>
                     </label>
                     <label class="flex items-center space-x-3 text-sm">
                         <input type="checkbox" data-task="Pembersihan Akhir & Punch List" class="w-4 h-4 text-emerald-600 rounded">
-                        <span>Pembersihan Akhir & Punch List</span>
+                        <span>24. Pembersihan Akhir & Punch List</span>
                     </label>
                 </div>
             </div>
 
-            <!-- Catatan Tambahan -->
+            <!-- Catatan Lapangan -->
             <div>
                 <label class="block text-xs font-semibold text-gray-600 mb-1">CATATAN LAPANGAN / KENDALA</label>
                 <textarea id="notes" rows="2" class="w-full p-2 border rounded-lg text-sm focus:ring-2 focus:ring-emerald-500" placeholder="Tulis kendala cuaca atau material..."></textarea>
