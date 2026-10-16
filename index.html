@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Proyek</title>
+    <!-- Tailwind CSS CDN untuk styling yang rapi dan responsif di HP -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body class="bg-gray-100 font-sans antialiased text-gray-800">
+
+    <div class="max-w-md mx-auto min-h-screen bg-white shadow-lg flex flex-col">
+        <!-- Header -->
+        <header class="bg-emerald-600 text-white p-4 sticky top-0 z-10 shadow">
+            <h1 class="text-lg font-bold">Checklist Proyek</h1>
+            <p class="text-xs text-emerald-100">Laporan Harian Lapangan 7 Kavling</p>
+        </header>
+
+        <!-- Form Kontrol: Tanggal & Pilih Kavling -->
+        <div class="p-4 bg-emerald-50 border-b border-emerald-100 space-y-3">
+            <div>
+                <label class="block text-xs font-semibold text-gray-600 mb-1">PILIH TANGGAL</label>
+                <input type="date" id="reportDate" class="w-full p-2 border rounded-lg bg-white text-sm focus:ring-2 focus:ring-emerald-500">
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-gray-600 mb-1">PILIH KAVLING</label>
+                <select id="kavlingSelect" class="w-full p-2 border rounded-lg bg-white text-sm focus:ring-2 focus:ring-emerald-500">
+                    <option value="Kav. 3">Kav. 3</option>
+                    <option value="Kav. 4">Kav. 4</option>
+                    <option value="Kav. 12a">Kav. 12a</option>
+                    <option value="Kav. 14a">Kav. 14a</option>
+                    <option value="Kav. 15a">Kav. 15a</option>
+                    <option value="Kav. 19">Kav. 19</option>
+                    <option value="Kav. 20-21">Kav. 20-21 (Gabung)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Daftar Checklist Pekerjaan -->
+        <div class="p-4 flex-1 overflow-y-auto space-y-6">
+            
+            <!-- Tahap 1 -->
+            <div>
+                <h3 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">1. Persiapan & Struktur Bawah</h3>
+                <div class="space-y-2 bg-gray-50 p-3 rounded-lg border">
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pembersihan & Pasang Bowplank" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Pembersihan & Pasang Bowplank</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Galian Tanah & Urugan Pasir" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Galian Tanah & Urugan Pasir</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pasang Batu Kali / Aanstamping" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Pasang Batu Kali / Aanstamping</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pengecoran Sloof Beton" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Pengecoran Sloof Beton</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Tahap 2 -->
+            <div>
+                <h3 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">2. Struktur Atas & Dinding</h3>
+                <div class="space-y-2 bg-gray-50 p-3 rounded-lg border">
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pemasangan Kolom Praktis" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Pemasangan Kolom Praktis</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pasang Dinding Bata Ringan (Hebel)" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Pasang Dinding Bata Ringan (Hebel) + Thinbed</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pengecoran Ring Balk" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Pengecoran Ring Balk</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Plesteran & Acian Dinding" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Plesteran & Acian Dinding</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Tahap 3, 4 & 5 (Termasuk Carport & Pagar Pembatas Samping) -->
+            <div>
+                <h3 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2">3, 4 & 5. Atap, MEP, Finishing & Site Works</h3>
+                <div class="space-y-2 bg-gray-50 p-3 rounded-lg border">
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pasang Rangka Atap Baja Ringan" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Pasang Rangka Atap Baja Ringan</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pasang Atap Bitumen & Plywood" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Pasang Atap Bitumen & Plywood/OSB</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Instalasi Plumbing & Water Heater/Exhaust" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Instalasi Plumbing, Water Heater & Exhaust Fan</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Penataan & Pemadatan Tanah Carport" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Penataan & Pemadatan Tanah Carport Depan</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pasang Pagar Pembatas Samping Hebel" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Pasang Pagar Pembatas Samping (Hebel)</span>
+                    </label>
+                    <label class="flex items-center space-x-3 text-sm">
+                        <input type="checkbox" data-task="Pembersihan Akhir & Punch List" class="w-4 h-4 text-emerald-600 rounded">
+                        <span>Pembersihan Akhir & Punch List</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Catatan Tambahan -->
+            <div>
+                <label class="block text-xs font-semibold text-gray-600 mb-1">CATATAN LAPANGAN / KENDALA</label>
+                <textarea id="notes" rows="2" class="w-full p-2 border rounded-lg text-sm focus:ring-2 focus:ring-emerald-500" placeholder="Tulis kendala cuaca atau material..."></textarea>
+            </div>
+        </div>
+
+        <!-- Tombol Simpan -->
+        <div class="p-4 bg-white border-t sticky bottom-0">
+            <button id="saveBtn" class="w-full bg-emerald-600 text-white font-semibold py-3 rounded-xl shadow hover:bg-emerald-700 transition">
+                Simpan & Kirim ke Google Sheets
+            </button>
+        </div>
+    </div>
+
+    <!-- Script Utama -->
+    <script>
+        // Set tanggal otomatis ke hari ini saat aplikasi dibuka
+        document.getElementById('reportDate').valueAsDate = new Date();
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
