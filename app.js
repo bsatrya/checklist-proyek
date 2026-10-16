@@ -10,7 +10,7 @@ if ('serviceWorker' in navigator) {
 }
 
 // 2. URL Web App Google Apps Script Anda
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwSMgl1NuvR4LZzaCAiHuBIvh4L6b_yYZng7FA7U-IpHqceEW3zZbxw9Ldx1aOBOQ1P5A/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbykpnjT_fU6M9QnZRGljzq4hG4wFTS8RecUfCZ-vumgkZY5bfaRypZLZTgFsi3HOj_E7w/exec";
 
 // 3. Logika Simpan & Kirim Data
 document.getElementById('saveBtn').addEventListener('click', async () => {
